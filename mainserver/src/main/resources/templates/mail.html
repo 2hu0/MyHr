@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>入职欢迎！</title>
+</head>
+<body>
+欢迎<span  th:test = "${name}"></span>加入2hu0的家庭，您的入职信息如下:
+<table border="1">
+    <tr>
+        <td>姓名</td>>
+        <td th:text="${name}"></td>>
+    </tr>
+    <tr>
+        <td>职位</td>>
+        <td th:text="${posname}"></td>>
+    </tr>>
+</table>>
+</body>
+</html>

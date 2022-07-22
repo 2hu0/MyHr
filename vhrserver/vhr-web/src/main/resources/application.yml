@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/vhr?serverTimezone=UTC
+    username: root
+    password: 627627
+    type: com.alibaba.druid.pool.DruidDataSource
+  redis:
+    host: 192.168.248.128
+    port: 6379
+    password: 627627
+    lettuce:
+      pool:
+        max-active: 10
+        max-idle: 10
+        min-idle: 1
+        time-between-eviction-runs: 10s
+  rabbitmq:
+    port: 5672
+    username: guest
+    password: guest
+    host: 192.168.248.128
+server:
+  port: 8888
+
+logging:
+  level.com.vhr.mapper: debug
